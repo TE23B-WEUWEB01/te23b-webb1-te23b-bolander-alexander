@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&family=Rokkitt:ital,wght@0,100..900;1,100..900&display=swap');
+/* Layoutens utseende */
+body.sida1 {
+    background-image: url("./bilder/cosmos-5809271_640.png");
+}
+body.sida2 {
+    background-image: url("./bilder/ai-generated-8229330_640.jpg");
+}
+body.sida3 {
+    background-image: url("./bilder/pandas-6954571_640.jpg");
+}
+body.sida4 {
+    background-image: url("./bilder/pattern-1097338_640.jpg");
+}
+body.sida5 {
+    background-image: url("./bilder/pattern-3296033_640.png");
+}
+body.sida6 {
+    background-image: url("./bilder/pattern-7843452_640.png");
+}
+div{
+    background-color: white;
+    width: 500px;
+    border: 5px dashed black;
+    margin: auto;
+    margin-top: 150px;
+    padding: 30px;
+    font-family: "Rokkitt", serif;
+}
+
+/* Innehållets utseende */
+h1{
+font-size: 25px;
+margin-bottom: 15px;
+}
+p{
+font-size: 25px;
+}
+a{
+text-decoration: none;
+font-size: 40px;
+color: darkgoldenrod;
+font-weight: bold;
+}
+
+
