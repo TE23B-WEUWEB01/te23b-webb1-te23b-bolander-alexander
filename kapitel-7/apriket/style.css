@@ -1,46 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
 html {
     box-sizing: border-box;
 }
-*, *:before, *:after {
+
+*,
+*:before,
+*:after {
     box-sizing: inherit;
 }
-body, h1, h2, h3, h4, h5, h6, p, ul {
-margin: 0;
-padding: 0;
-}
-img {
-width: 100%;
-}
-/* sidan */
-body {}
-.kontainer {
 
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+    margin: 0;
+    padding: 0;
 }
+
+img {
+    width: 100%;
+}
+
+/* sidan */
+body {
+    background-image: url(bilder/chris-abney-qLW70Aoo8BE-unsplash.jpg);
+}
+
+.kontainer {
+    width: 1000px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* bygga layout */
+.kontainer {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas: 
+    "header header"
+    "main aside"
+    "footer footer"
+    ;
+}
+
+header {
+    grid-area: header;
+    background-color: aqua;
+}
+
+main {
+    grid-area: main;
+    background-color: aquamarine;
+}
+
+aside {
+    grid-area: aside;
+    background-color: bisque;
+}
+
+footer {
+    grid-area: footer;
+    background-color: brown;
+}
+
 
 /* SidHuvud */
-header {}
-header h1 {}
+header {
+    color: #fff;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+header h1 {
+    font-size: 80px;
+}
+
 header h2 {}
 
 /* Menyn */
 header nav {}
+
 header nav a {}
+
 header nav a.aktiv {}
+
 header nav a:hover {}
 
 /* Sidans innehåll - artiklar, text mm */
 main {}
-main h3 {}
-main figure {}
-main figure img {}
-main figure figcaption {}
-main p {}
+
+main article {}
+
+main article h3 {}
+
+main article figure {}
+
+main article figure img {}
+
+main article figure figcaption {}
+
+main article p {}
 
 /* sidofält */
 aside {}
+
 aside h4 {}
+
 aside p {}
 
 /* Sidofoten */
 footer {}
+
 footer p {}
