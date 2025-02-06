@@ -32,6 +32,8 @@ body {
     background-image: url(bilder/chris-abney-qLW70Aoo8BE-unsplash.jpg);
 }
 
+
+
 .kontainer {
     width: 1000px;
     margin: auto;
@@ -45,28 +47,35 @@ body {
     grid-template-areas: 
     "header header"
     "main aside"
-    "footer footer"
-    ;
+    "footer footer";
+    gap: 20px;
 }
 
 header {
     grid-area: header;
-    background-color: aqua;
+    
+    
 }
 
 main {
     grid-area: main;
-    background-color: aquamarine;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
 }
 
 aside {
     grid-area: aside;
-    background-color: bisque;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
 }
 
 footer {
     grid-area: footer;
-    background-color: brown;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
 }
 
 
@@ -83,13 +92,29 @@ header h1 {
 header h2 {}
 
 /* Menyn */
-header nav {}
+header nav {
+    background: rgb(26,36,0);
+    background: linear-gradient(90deg, rgba(26,36,0,1) 0%, rgba(39,121,9,1) 35%, rgba(255,252,0,1) 100%);
+    padding: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
 
-header nav a {}
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+}
 
-header nav a.aktiv {}
+header nav a.aktiv {
+    background: rgb(26,36,0);
+background: linear-gradient(90deg, rgba(26,36,0,1) 0%, rgba(39,121,9,1) 35%, rgba(234,1,225,1) 70%, rgba(255,252,0,1) 100%);
+}
 
-header nav a:hover {}
+header nav a:hover {
+    background: rgb(26,36,0);
+background: linear-gradient(90deg, rgba(26,36,0,1) 0%, rgba(59,19,223,1) 27%, rgba(234,1,225,1) 70%, rgba(255,252,0,1) 100%);
+}
+
 
 /* Sidans innehåll - artiklar, text mm */
 main {}
@@ -98,7 +123,12 @@ main article {}
 
 main article h3 {}
 
-main article figure {}
+main article figure {
+    width: 50%;
+    margin: auto;
+    padding: 30px;
+    border: 1px solid;
+}
 
 main article figure img {}
 
