@@ -1,0 +1,56 @@
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body, h1, h2, h3, h4, h5, h6, p, ul {
+margin: 0;
+padding: 0;
+}
+img {
+width: 100%;
+}
+
+
+/* holy grail layout */
+.kontainer {
+    width: 800px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-areas: 
+    "sidhuvud sidhuvud sidhuvud"
+    "meny innehall sidebar"
+    "sitfot sitfot sitfot"
+    ;
+}
+header {
+    background-color: firebrick;
+    grid-area: sidhuvud;
+    min-height: 20vh;
+}
+nav {
+    background-color: aquamarine;
+    grid-area: meny;
+    20vh
+
+}
+main {
+    background-color: gold;
+    grid-area: innehall;
+    min-height: 20vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+} 
+aside {
+    background-color: sandybrown;
+    grid-area: sidebar;
+    min-height: 20vh;
+}
+footer {
+    background-color: wheat;
+    grid-area: sitfot;
+    min-height: 20vh;
+}
