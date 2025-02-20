@@ -40,6 +40,19 @@ body {
     padding: 20px;
 }
 
+/* för läsplatta < 768px */
+@media (min-wifth: 1000px) {
+.kontainer {
+    width: 100%;
+}
+}
+/* för mobil < 567 px */
+@media (min-width: 1000px) {
+.kontainer {
+    width: 100%;
+}
+}
+
 /* bygga layout */
 .kontainer {
     display: grid;
