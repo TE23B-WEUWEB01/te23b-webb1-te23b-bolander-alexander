@@ -1,0 +1,15 @@
+.kontainer {
+    width: 700px;
+    margin: auto;
+    padding: 25px;
+    background: #eee;
+
+}
+h1 {
+    font-size: 50px;
+    color: violet;
+}
+
+p {
+    visibility: hidden;
+}
